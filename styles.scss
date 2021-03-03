@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utily Classes */
+
+.big-font {
+    font-size: 18px;
+}
+.bigger-font {
+    font-size: 24px;
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+.gray-text {
+    color: #A9A9A9;
+}
+
+header {
+    width: 100%;
+    margin: 2em 0; 
+}
+
+.user-info {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+
+   img {
+       width: 23%;
+       border-radius: 16px;
+   }
+
+   .social-media-stats {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 1rem;
+       
+       .box {
+           width: 100px;
+           height: 67px;
+           background: #E5E5E5;
+           border-radius: 12px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+       }
+
+       .box-2 {
+           margin: 0 1rem;
+       }
+   }
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'photo-1 photo-1 photo-2 photo-2 photo-2 photo-2'
+                          'photo-3 photo-3 photo-3 photo-3 photo-4 photo-4'                         
+                          'photo-5 photo-5 photo-6 photo-6 photo-4 photo-4';
+
+    grid-gap: 1em;
+    .photo-1 {
+        grid-area: photo-1;
+      }
+    .photo-2 {
+        grid-area: photo-2;
+      }
+    .photo-3 {
+        grid-area: photo-3;
+      }
+    .photo-4 {
+        grid-area: photo-4;
+      }
+    .photo-5 {
+        grid-area: photo-5;
+      }
+    .photo-6 {
+        grid-area: photo-6;
+      }
+     
+       
+      
+
+    img {
+        border-radius: 12px;
+        width: 100%;
+    }
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+}
